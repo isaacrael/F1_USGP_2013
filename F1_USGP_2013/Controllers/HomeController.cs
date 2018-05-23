@@ -17,7 +17,7 @@ namespace F1_USGP_2013.Controllers
 
         public IActionResult About()
         {
-            ViewData["Message"] = "Your application description page.";
+            ViewData["Message"] = "Welcome - To USGP F1 2013";
 
             return View();
         }
