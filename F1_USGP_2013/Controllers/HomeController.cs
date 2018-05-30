@@ -10,14 +10,26 @@ namespace F1_USGP_2013.Controllers
 {
     public class HomeController : Controller
     {
+
+
         public IActionResult Index()
         {
+            ViewData["Message"] = "Welcome To - USGP F1 2013";
+
+            return View();
+        
+        }
+
+        public IActionResult PhotoGallery()
+        {
+            ViewData["Message"] = "USGP F1 2013 - Photo Gallery";
+
             return View();
         }
 
-        public IActionResult About()
+        public IActionResult VideoGallery()
         {
-            ViewData["Message"] = "Welcome - To USGP F1 2013";
+            ViewData["Message"] = "USGP F1 2013 - Video Gallery";
 
             return View();
         }
