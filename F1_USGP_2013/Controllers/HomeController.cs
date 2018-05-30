@@ -14,7 +14,7 @@ namespace F1_USGP_2013.Controllers
 
         public IActionResult Index()
         {
-            ViewData["Message"] = "Welcome To - USGP F1 2013";
+            ViewData["Message"] = "Welcome To - F1 USGP 2013";
 
             return View();
         
@@ -22,14 +22,14 @@ namespace F1_USGP_2013.Controllers
 
         public IActionResult PhotoGallery()
         {
-            ViewData["Message"] = "USGP F1 2013 - Photo Gallery";
+            ViewData["Message"] = "F1 USGP 2013 - Photo Gallery";
 
             return View();
         }
 
         public IActionResult VideoGallery()
         {
-            ViewData["Message"] = "USGP F1 2013 - Video Gallery";
+            ViewData["Message"] = "F1 USGP 2013 - Video Gallery";
 
             return View();
         }
