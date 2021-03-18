@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Web;
 using Microsoft.AspNetCore.Mvc;
 using F1_USGP_2013.Models;
 
@@ -10,21 +11,33 @@ namespace F1_USGP_2013.Controllers
 {
     public class HomeController : Controller
     {
+
+
         public IActionResult Index()
         {
+            ViewData["Message"] = "Welcome To - F1 USGP 2013";
+
+            return View();
+        
+        }
+
+        public IActionResult PhotoGallery()
+        {
+            ViewData["Message"] = "F1 USGP 2013 - Photo Gallery";
+
             return View();
         }
 
-        public IActionResult About()
+        public IActionResult VideoGallery()
         {
-            ViewData["Message"] = "Welcome - To USGP F1 2013";
+            ViewData["Message"] = "F1 USGP 2013 - Video Gallery";
 
             return View();
         }
 
         public IActionResult Contact()
         {
-            ViewData["Message"] = "Your contact page.";
+            ViewData["Message"] = "";
 
             return View();
         }
